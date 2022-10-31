@@ -48,9 +48,10 @@ function Counter() {
   const [count, setCount] = useState(10);
 
   const IncreaseCount = () => setCount(count + 1);
+  const DecreaseCount = () => setCount(count - 1);
   return (
     <div className="btn-container">
-      <button>Decrease</button>
+      <button onClick={DecreaseCount}>Decrease</button>
       <h2>{count}</h2>
       <button onClick={IncreaseCount}>Increase</button>
     </div>
